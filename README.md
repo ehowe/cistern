@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/lanej/cistern.png)](http://travis-ci.org/lanej/cistern)
 
-TODO: Write a gem description
+A Generic Service Client library
 
 ## Installation
 
@@ -20,7 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Service
+### Collection
+### Model
+### Attributes
+#### Custom
+### Formatters
 
 ## Releasing
 

@@ -22,7 +22,7 @@ class Cistern::Collection < Array
   end
 
   def self.model(new_model=nil)
-    if new_model == nil
+    if new_model.nil?
       @model
     else
       @model = new_model
@@ -58,12 +58,10 @@ class Cistern::Collection < Array
     unless attributes.is_a?(::Hash)
       raise(ArgumentError.new("Initialization parameters must be an attributes hash, got #{attributes.class} #{attributes.inspect}"))
     end
-    model.new(
-      attributes.merge(
+    model.new({
         :collection => self,
-        :connection => connection
-      )
-    )
+        :connection => connection,
+      }.merge(attributes))
   end
 
   def load(objects)
